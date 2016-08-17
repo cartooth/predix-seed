@@ -10,10 +10,10 @@ var config = {
    * You'll need to update clientId, serverUrl, and base64ClientCredential.
    */
   uaa: {
-    clientId: 'predix-seed',
-    serverUrl: 'https://etc.predix-uaa-staging.grc-apps.svc.ice.ge.com',
+    clientId: '212409145-oauth2-client',
+    serverUrl: 'https://b8ce8acb-a8f5-4308-baaa-65db05b8fe98.predix-uaa.run.aws-usw02-pr.ice.predix.io',
     defaultClientRoute: '/about',
-    base64ClientCredential: 'cHJlZGl4LXNlZWQ6TTBhVzdrTmZRRndyTTZ3ZHJpV2h3bVc2ck1HQ045Q0x1cnI5VnI3elc0cz0='
+    base64ClientCredential: 'MjEyNDA5MTQ1LW9hdXRoMi1jbGllbnQ6UGFzczRvYXV0aDIu'
   },
   /**
    * --------- ADD YOUR SECURE ROUTES HERE ------------
@@ -25,8 +25,8 @@ var config = {
    */
   proxy: {
     '/api/view-service(.*)': {
-      url: 'http://predix-views-dev.grc-apps.svc.ice.ge.com/v1$1',
-      instanceId: '49a92fd6-df7b-45f6-925e-0bca94be7313'
+      url: 'https://predix-views.run.aws-usw02-pr.ice.predix.io/api$1',
+      instanceId: 'cf4caa0a-c280-49dc-886a-3f6a15987fa0'
     }
   }
 };
